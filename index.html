@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
+    />
+    <!-- 'classic' theme -->
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Thrunkable</title>
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="header-child">
+        <i class="fas fa-question-circle nav"></i>
+        <strong>Design</strong>
+        <strong>Blocks</strong>
+      </div>
+      <div class="header-child">
+        <i class="fas fa-question-circle nav"></i>
+        <h3>My Projects</h3>
+      </div>
+      <div class="header-child">
+        <i class="fas fa-play nav" data-id="play"></i>
+        <i class="fas fa-tablet-alt nav" data-id="tablet"></i>
+        <i class="fas fa-share-alt nav" data-id="share"></i>
+        <i class="fas fa-download nav" data-id="download"></i>
+        <i class="fas fa-ellipsis-v nav" data-id="toggle"></i>
+        <i class="fas fa-user-circle nav" data-id="profile"></i>
+        <i class="fas fa-angle-down nav" data-id="arrowdown"></i>
+      </div>
+      <div class="sub-nav hide"></div>
+    </header>
+    <main class="main-content">
+      <aside>
+        <i class="fas fa-tablet-alt" data-id="designer"></i>
+        <i class="fas fa-database" data-id="data"></i>
+        <i class="fas fa-wallet" data-id="assets"></i>
+        <i class="fas fa-cog" data-id="settings"></i>
+        <i class="fas fa-question-circle" data-id="help"></i>
+      </aside>
+      <div class="tag-content hide">
+        <h4>Label</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt
+          earum at suscipit dolor animi blanditiis repellat laborum?
+          Exercitationem quo natus facilis numquam cum odit rem sint ipsam autem
+          tempora.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="aside-sub-nav hide"><p></p></div>
+      <article>
+        <header class="header-minor">
+          <div class="header-minor__center">
+            <p>Screen1</p>
+            <span>&plus;</span>
+          </div>
+          <p>Public</p>
+        </header>
+        <!-- display relative -->
+        <section class="feature-wrapper">
+          <div class="box"><p>Click and drag box to move around</p></div>
+
+          <!-- display absolute -->
+          <section id="draggable" class="right-absolute">
+            <div class="screen-title">
+              <p><b>Screens</b></p>
+              <span>&plus;</span>
+            </div>
+            <div class="screen-num-con">
+              <div class="screen-num">
+                <i class="fas fa-tablet-alt"></i>
+                <p>Screen 1</p>
+              </div>
+            </div>
+            <div class="components-con">
+              <p class="add-component">
+                <b>Add Components</b>
+              </p>
+              <form class="component-form">
+                <input type="text" placeholder="Search" />
+                <!-- <i class="far fa-search"></i> -->
+              </form>
+              <div class="icons-container">
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="far fa-square"></i>
+                    <span>Button</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Button"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-tag"></i>
+                    <span>Label</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Label"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="far fa-image"></i>
+                    <span>Image</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Image"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-keyboard"></i>
+                    <span>Text Input</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="Text Input"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-list"></i>
+                    <span>List Viewer</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="List Viewer"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="far fa-object-group"></i>
+                    <span>Group</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Group"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="far fa-window-maximize"></i>
+                    <span>Web Viewer</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="Web Viewer"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-toggle-on"></i>
+                    <span>Switch</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Switch"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-minus"></i>
+                    <span>Slider</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Slider"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Map</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Map"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-compact-disc"></i>
+                    <span>Animation</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="Animation"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-video"></i>
+                    <span>Video</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Video"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-chalkboard"></i>
+                    <span>Canvas</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden" data-id="Canvas"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-spinner"></i>
+                    <span
+                      >Loading <br />
+                      Icon</span
+                    >
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="Loading Icon"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Date Input</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="Date Input"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="far fa-clock"></i>
+                    <span>Time Input</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="Time Input"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="far fa-file-pdf"></i>
+                    <span
+                      >PDF <br />
+                      Reader</span
+                    >
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id=">PDF Reader"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span
+                      >Data <br />
+                      Viewer <br />
+                      List</span
+                    >
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id=">Data Viewer List"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-table"></i>
+                    <span
+                      >Data <br />
+                      Viewer <br />
+                      Grid</span
+                    >
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="Data Viewer Grid"
+                  ></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>Rating</span>
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i class="far fa-question-circle hidden"></i>
+                </div>
+                <div class="icon-card">
+                  <div class="icon-content">
+                    <i class="fas fa-university"></i>
+                    <span
+                      >AdMob <br />
+                      Banner</span
+                    >
+                    <!-- <div class="icon-content-cover"></div> -->
+                  </div>
+                  <i
+                    class="far fa-question-circle hidden"
+                    data-id="AdMob Banner"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- display absolute -->
+          <section class="left-absolute">
+            <div>
+              <div class="screen-title-left">
+                <i class="fas fa-tablet-alt"></i>
+                <p>Screen 1</p>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <div class="screen">
+                <button class="screen-form">
+                  <span
+                    ><i class="fas fa-sort-down open"></i
+                    ><i class="fas fa-caret-right close hide"></i
+                  ></span>
+                  <span>Screen</span>
+                </button>
+              </div>
+              <form class="form-properties form1">
+                <div class="color-ppty">
+                  <label for="color"
+                    >Background Color
+                    <input
+                      type="text"
+                      placeholder="rgb(_,_,_)"
+                      class="custom-input"
+                      hidden="hidden"
+                      spellcheck="false"
+                    />
+                    <!-- <span><i class="fas fa-angle-down"></i> </span> -->
+                    <input type="color" class="real-color-picker" />
+                  </label>
+                  <div class="color-box"></div>
+                </div>
+                <div class="bg-ppty">
+                  <div class="bg-ppty-input">
+                    <label for="picture">Background Picture</label>
+                    <input
+                      type="text"
+                      placeholder="No file source"
+                      class="real-btn"
+                    />
+                    <span
+                      ><i
+                        class="fas fa-times-circle cancel-bg-ppty-input hide"
+                      ></i
+                    ></span>
+                  </div>
+                  <div class="bg-ppty-absolute hide">
+                    <input
+                      type="file"
+                      name="file"
+                      id="real-ulpoad-btn"
+                      class="hide"
+                    />
+                    <button class="bg-ppty-upload">
+                      <i class="fas fa-upload"></i>
+                      <p>Upload files</p>
+                    </button>
+                    <p>OR</p>
+                    <button class="typeURL">Type in URL</button>
+                  </div>
+                </div>
+                <div>
+                  <div class="bg-resize-ppty">
+                    <label for="picture">Background Picture Resize Model</label>
+                    <input type="text" placeholder="Select option" /><span
+                      ><i class="fas fa-angle-down"></i>
+                      <i class="fas fa-times-circle"></i>
+                    </span>
+                  </div>
+                  <ul class="dropdown bg-resize-items hide">
+                    <li class="resize-item">cover</li>
+                    <li class="resize-item">contain</li>
+                    <li class="resize-item">stretch</li>
+                    <li class="resize-item">repeat</li>
+                    <li class="resize-item">center</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Scrollable</p>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <div class="switch-btn">
+                      <p class="true-switch hidden">true</p>
+                      <p class="false-switch">false</p>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <div class="screen-ppty">
+                    <label for="picture">Screen Orientation</label>
+                    <input type="text" placeholder="Select option" /><span
+                      ><i class="fas fa-angle-down"></i
+                    ></span>
+                  </div>
+                  <ul class="dropdown screen-ppty-items hide">
+                    <li class="screen-item">potrait</li>
+                    <li class="screen-item">landscape</li>
+                    <li class="screen-item">auto</li>
+                  </ul>
+                </div>
+              </form>
+              <div class="screen statusbar">
+                <button class="statusbar-form">
+                  <span
+                    ><i class="fas fa-sort-down open"></i
+                    ><i class="fas fa-caret-right close hide"></i
+                  ></span>
+                  <span>Status Bar</span>
+                </button>
+              </div>
+              <form class="form-properties form2">
+                <div class="statusbar-ppty">
+                  <label for="picture">StatusBar Style</label>
+                  <input type="text" placeholder="Default" /><span
+                    ><i class="fas fa-angle-down"></i
+                  ></span>
+                </div>
+                <ul class="dropdown status-bar-items hide">
+                  <li class="status-item">default</li>
+                  <li class="status-item">light-content</li>
+                  <li class="status-item">dark-content</li>
+                </ul>
+                <div class="color-ppty">
+                  <label for="color"
+                    >Background Color
+                    <input
+                      type="text"
+                      placeholder="rgb(0,0,0)"
+                      class="custom-input"
+                      spellcheck="false"
+                    />
+                    <input type="color" class="real-color-picker" />
+                    <!-- <span><i class="fas fa-angle-down"></i> </span> -->
+                  </label>
+                  <div class="color-box"></div>
+                </div>
+                <div>
+                  <p>Show StatusBar</p>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <div class="switch-btn">
+                      <p class="true-switch hidden">true</p>
+                      <p class="false-switch">false</p>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <p>Translucent StatusBar (Android Only)</p>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <div class="switch-btn">
+                      <p class="true-switch hidden">true</p>
+                      <p class="false-switch">false</p>
+                    </div>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </section>
+          <!-- ASIDE SUBNAV CONTAINER -->
+
+          <!-- icons in feature wrapper -->
+          <nav class="feature-nav">
+            <i class="fas fa-mouse-pointer nav" data-id="mousepointer"></i>
+            <i class="far fa-hand-pointer nav" data-id="handpointer"></i>
+            <i class="fas fa-search-minus nav" data-id="zoomin"></i>
+            <i class="fas fa-search-plus nav" data-id="zoomout"></i>
+            <i class="far fa-dot-circle nav"></i>
+          </nav>
+        </section>
+      </article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
